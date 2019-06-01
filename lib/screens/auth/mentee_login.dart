@@ -51,6 +51,7 @@ class _MenteeLoginPageState extends State<MenteeLoginPage> {
   void _submitForm() {
     if (_globalKey.currentState.validate()) {
       _globalKey.currentState.save();
+      Navigator.popAndPushNamed(context, 'menteeDashboard');
     }
   }
 
@@ -161,7 +162,7 @@ class _MenteeLoginPageState extends State<MenteeLoginPage> {
                     borderRadius: BorderRadius.circular(20.0)),
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                 onPressed: () async {
-
+                    Navigator.popAndPushNamed(context, 'menteeDashboard');
                 },
                 child: Text(
                   'Login with Google',
