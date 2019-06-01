@@ -5,6 +5,7 @@ import 'screens/auth/mentor_signup.dart';
 import 'screens/auth/mentee_login.dart';
 import 'screens/auth/mentee_signup.dart';
 import 'screens/mentors.dart';
+import 'screens/mentorPage.dart';
 
 void main() => runApp(FlutterConnectApp());
 
@@ -22,6 +23,7 @@ class FlutterConnectApp extends StatelessWidget {
                 'menteeLogin': (context) => MenteeLoginPage(),
                 'menteeSignup': (context) => MenteeSignupPage(),
                 'menteeDashboard': (context) => MentorsList(),
+                'mentorProfile': (context) => MentorPage()
             },
             initialRoute: 'intro',
         );

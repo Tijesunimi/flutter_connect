@@ -23,12 +23,12 @@ class MentorsList extends StatelessWidget {
                 padding: EdgeInsets.all(5.0),
                 itemCount: 6,
                 staggeredTileBuilder: (int index) => new StaggeredTile.fit(2),
-                itemBuilder: (BuildContext context, int index) => buildMentorPreview(mentors[index].name, mentors[index].description, mentors[index].job, AssetImage(mentors[index].pictureUrl)),
+                itemBuilder: (BuildContext context, int index) => buildMentorPreview(mentors[index].name, mentors[index].description, mentors[index].job, AssetImage(mentors[index].pictureUrl), context),
             )
         );
     }
 
-    Widget buildMentorPreview(String name, String description, String job, AssetImage picture) {
+    Widget buildMentorPreview(String name, String description, String job, AssetImage picture, BuildContext context) {
         return Container(
             margin: EdgeInsets.all(5.0),
             padding: EdgeInsets.all(10.0),
@@ -78,6 +78,9 @@ class MentorsList extends StatelessWidget {
                             child: MaterialButton(
                                 textColor: Colors.green,
                                 disabledColor: Colors.green,
+                                onPressed: () {
+                                    Navigator.pushNamed(context, 'mentorProfile');
+                                },
                                 child: SizedBox(
                                     width: double.infinity,
                                     child: Text(
