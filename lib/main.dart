@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_connect/intro_page.dart';
-import 'package:flutter_connect/mentor_login.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,7 +20,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: IntroPage(),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }

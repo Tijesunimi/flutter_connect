@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "628829580672",
+    "firebase_url": "https://flutterconnect-a67cd.firebaseio.com",
+    "project_id": "flutterconnect-a67cd",
+    "storage_bucket": "flutterconnect-a67cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628829580672:android:648dcb18d21817fd",
+        "android_client_info": {
+          "package_name": "com.fluttercon.flutter_connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628829580672-u7jvhqpadmnhf37bgbpiels8ndtq5ubo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI0MW-ELgl7qiN99Jm8sebfeVydImLQN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628829580672-u7jvhqpadmnhf37bgbpiels8ndtq5ubo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
