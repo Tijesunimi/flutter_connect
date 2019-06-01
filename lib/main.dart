@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_connect/editProfile.dart';
 import 'package:flutter_connect/mentorPage.dart';
+import 'package:flutter_connect/searchPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,9 +11,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(fontFamily: "Asap"),
       debugShowCheckedModeBanner: false,
-      initialRoute: "EditProfile",
-      routes: {"MentorPage": (context) => MentorPage(),
-      "EditProfile":(context) => EditProfile()},
+      initialRoute: "SearchPage",
+      routes: {
+        "MentorPage": (context) => MentorPage(),
+        "EditProfile": (context) => EditProfile(),
+        "SearchPage": (context) => SearchPage()
+      },
     );
   }
 }
