@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_connect/mentee_login.dart';
-import 'package:flutter_connect/mentor_login.dart';
+import 'package:flutter_connect/screens/auth/mentee_login.dart';
+import 'package:flutter_connect/screens/auth/mentor_login.dart';
 
 class IntroPage extends StatelessWidget {
   
@@ -52,9 +52,7 @@ class IntroPage extends StatelessWidget {
                   children: <Widget>[
                     OutlineButton(
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(
-                          builder: (BuildContext context) => MentorLoginPage()
-                        ),);
+                        Navigator.of(context).pushNamed('mentorLogin');
                       },
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0)),
@@ -70,9 +68,7 @@ class IntroPage extends StatelessWidget {
                     ),
                     OutlineButton(
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(
-                          builder: (BuildContext context) => MenteeLoginPage()
-                        ),);
+                          Navigator.of(context).pushNamed('menteeLogin');
                       },
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0)),

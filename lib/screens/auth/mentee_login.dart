@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_connect/mentee_signup.dart';
 
 class MenteeLoginPage extends StatefulWidget {
   @override
@@ -138,12 +137,7 @@ class _MenteeLoginPageState extends State<MenteeLoginPage> {
                 alignment: Alignment.centerRight,
                 child: FlatButton(
                     onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (BuildContext context) =>
-                                MenteeSignupPage()),
-                      );
+                      Navigator.pushNamed(context, 'menteeSignup');
                     },
                     child: Text(
                       "Don't have an account? Sign Up.",
@@ -166,7 +160,9 @@ class _MenteeLoginPageState extends State<MenteeLoginPage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0)),
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                onPressed: () {},
+                onPressed: () async {
+
+                },
                 child: Text(
                   'Login with Google',
                   style: TextStyle(

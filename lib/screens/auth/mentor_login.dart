@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_connect/mentor_signup.dart';
+import 'package:flutter_connect/screens/auth/mentor_signup.dart';
 
 class MentorLoginPage extends StatefulWidget {
   @override
